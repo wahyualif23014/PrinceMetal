@@ -8,7 +8,7 @@ fun hitungLuasPersegi(sisi: Int): Int {
     return sisi * sisi
 }
 fun main() {
-    sapaPengguna("dewwwa", umur = 19) // Memanggil fungsi sapaPengguna
+    sapaPengguna("dewa", umur = 19) // Memanggil fungsi sapaPengguna
 
     val luas = hitungLuasPersegi(10) // Memanggil fungsi dan menyimpan hasilnya
     val tinggi = hitungLuasPersegi(10)
