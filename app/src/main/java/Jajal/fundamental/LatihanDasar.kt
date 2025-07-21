@@ -1,29 +1,74 @@
 package Jajal.fundamental
 
-//if else
+
+
+
+//pernyataan when
+
 fun main() {
-    val nilai = 90
-    val keterangan: String
-
-    // Penggunaan if-else sebagai statement (pernyataan)
-    if (nilai > 75) {
-        println("Selamat, Anda lulus!")
-    } else {
-        println("Maaf, Anda perlu belajar lagi.")
+    val hari = 4
+    val namaHari = when (hari) {
+        1 -> "Senin"
+        2 -> "Selasa"
+        3 -> "Rabu"
+        4 -> "Kamis"
+        5 -> "Jumat"
+        else -> "Hari libur"
     }
+    println("Hari ke-$hari adalah $namaHari") // Output: Hari ke-3 adalah Rabu
 
-    // Penggunaan if-else sebagai expression (bisa mengembalikan nilai)
-    val predikat = if (nilai > 90) {
-        "Sangat Baik"
-    } else if (nilai > 75) {
-        "Baik"
-    } else {
-        "Cukup"
+    val nilai = 'A'
+    when (nilai) {
+        'A', 'B' -> println("Luar biasa!")
+        'C' -> println("Bagus.")
+        else -> println("Tingkatkan lagi.")
     }
-    println("Predikat Anda: $predikat") // Output: Predikat Anda: Baik
 }
+//if else
+//fun main() {
+//    val nilai = 90
+//    val keterangan: String
+//    if (nilai > 75) {
+//        println("Selamat, Anda lulus!")
+//    } else {
+//        println("Maaf, Anda perlu belajar lagi.")
+//    }
+//
+//    val predikat = if (nilai > 90) {
+//        "Sangat Baik"
+//    } else if (nilai > 75) {
+//        "Baik"
+//    } else {
+//        "Cukup"
+//    }
+//    println("Predikat Anda: $predikat")
+//}
 
 
+
+//fun sapaPengguna(nama: String, umur: Int){
+//    println("
+//    }
+//}
+//if else
+//fun main() {
+//    val nilai = 90
+//    val keterangan: String
+//    if (nilai > 75) {
+//        println("Selamat, Anda lulus!")
+//    } else {
+//        println("Maaf, Anda perlu belajar lagi.")
+//    }
+//
+//    val predikat = if (nilai > 90) {
+//        "Sangat Baik"
+//    } else if (nilai > 75) {
+//        "Baik"
+//    } else {
+//        "Cukup"
+//    }
+//    println("Predikat Anda: $predikat")
+//}
 
 
 
