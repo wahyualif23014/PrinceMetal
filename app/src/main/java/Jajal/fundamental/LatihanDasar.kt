@@ -135,7 +135,6 @@ fun main() {
 //    }
 //    println("Status kelulusan (modern): $statusLulusModern")
 //
-//    // 'when' -> versi canggih dari switch-case
 //    val grade: Char = 'A'
 //    when(grade) {
 //        'A' -> println("Luar Biasa!")
@@ -149,7 +148,7 @@ fun main() {
 //fun main() {
 //    // Data Diri Siswa Baru
 //    val namaSiswa: String = "Citra Lestari"
-//    val nisn: String = "51234567" // NISN lebih cocok String karena bisa diawali '0' dan tidak dihitung
+//    val nisn: String = "51234567"
 //    val umurSiswa: Int = 16
 //    val tinggiBadan: Double = 165.7
 //    val kelas: Char = 'B'
@@ -163,7 +162,6 @@ fun main() {
 //    println("Masuk di kelas: 11-$kelas")
 //    println("Status keaktifan: $apakahAktif")
 //
-//    // Siswa tersebut memutuskan untuk non-aktif sementara
 //    apakahAktif = false
 //    println("Status keaktifan terbaru: $apakahAktif")
 //}
