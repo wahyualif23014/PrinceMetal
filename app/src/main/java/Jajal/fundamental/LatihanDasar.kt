@@ -1,19 +1,45 @@
 package Jajal.fundamental
 
-
-fun sapaPengguna(nama: String, umur: Int){
-    println("halo $nama, umur anda $umur tahun")
-}
-fun hitungLuasPersegi(sisi: Int): Int {
-    return sisi * sisi
-}
+//if else
 fun main() {
-    sapaPengguna("dewa", umur = 19)
+    val nilai = 90
+    val keterangan: String
 
-    val luas = hitungLuasPersegi(10)
-    val tinggi = hitungLuasPersegi(10)
-    println("Luas persegi adalah $luas")
+    // Penggunaan if-else sebagai statement (pernyataan)
+    if (nilai > 75) {
+        println("Selamat, Anda lulus!")
+    } else {
+        println("Maaf, Anda perlu belajar lagi.")
+    }
+
+    // Penggunaan if-else sebagai expression (bisa mengembalikan nilai)
+    val predikat = if (nilai > 90) {
+        "Sangat Baik"
+    } else if (nilai > 75) {
+        "Baik"
+    } else {
+        "Cukup"
+    }
+    println("Predikat Anda: $predikat") // Output: Predikat Anda: Baik
 }
+
+
+
+
+
+//fun sapaPengguna(nama: String, umur: Int){
+//    println("halo $nama, umur anda $umur tahun")
+//}
+//fun hitungLuasPersegi(sisi: Int): Int {
+//    return sisi * sisi
+//}
+//fun main() {
+//    sapaPengguna("dewa", umur = 19)
+//
+//    val luas = hitungLuasPersegi(10)
+//    val tinggi = hitungLuasPersegi(10)
+//    println("Luas persegi adalah $luas")
+//}
 
 
 
