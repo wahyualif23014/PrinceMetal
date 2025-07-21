@@ -15,7 +15,7 @@ fun main() {
         5 -> "Jumat"
         else -> "Hari libur"
     }
-    println("Hari ke-$hari adalah $namaHari") // Output: Hari ke-3 adalah Rabu
+    println("Hari ke-$hari adalah $namaHari") // Output:
 
     val nilai = 'A'
     when (nilai) {
@@ -91,20 +91,17 @@ fun main() {
 
 //Konsep Krusial - Null Safety
 //fun main() {
-//    // Variabel ini tidak boleh null, jika diisi null akan error
 //    var namaPanggilan: String = "Budi"
 //    // namaPanggilan = null // Ini akan langsung error!
 //
-//    // Untuk membuat variabel bisa bernilai null, tambahkan tanda tanya (?)
 //    var namaTengah: String? = "Prakoso"
 //    namaTengah = null // Ini boleh
 //
 //    // Cara mengakses variabel nullable dengan aman
 //    // 1. Safe Call (?.)
-//    println("Panjang nama tengah: ${namaTengah?.length}") // Jika namaTengah null, hasilnya null, bukan error.
-//
+//    println("Panjang nama tengah: ${namaTengah?.length}")
 //    // 2. Elvis Operator (?:)
-//    val panjangNama = namaTengah?.length ?: 0 // Jika ekspresi di kiri null, gunakan nilai di kanan (0).
+//    val panjangNama = namaTengah?.length ?: 0
 //    println("Panjang nama (dengan elvis): $panjangNama")
 //}
 
@@ -131,7 +128,6 @@ fun main() {
 //    }
 //    println("Status kelulusan (if-else): $statusLulus")
 //
-//    // Cara lebih "Kotlin": if-else sebagai expression
 //    val statusLulusModern = if (nilaiUjian > 75) {
 //        "Lulus dengan baik"
 //    } else {
