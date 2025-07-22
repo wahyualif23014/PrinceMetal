@@ -1,20 +1,37 @@
 package Jajal.fundamental
 
 
+//koleksi data
+fun main() {
+    // List (Daftar)
+    val daftarNama: List<String> = listOf("Ani", "Budi", "Candra", "Ani")
+    println("Nama pertama: ${daftarNama[0]}")
+    println("Seluruh nama: $daftarNama")
 
+    // Set (Himpunan)
+    val nomorUnik: Set<Int> = setOf(1, 2, 3, 4, 3, 2)
+    println("Nomor unik: $nomorUnik") // Output: [1, 2, 3, 4]
+
+    // Map (Peta)
+    val ibukota: Map<String, String> = mapOf(
+        "Indonesia" to "Jakarta",
+        "Jepang" to "Tokyo"
+    )
+    println("Ibukota Indonesia adalah ${ibukota.getValue("Indonesia")}")
+}
 // null safety
 
-fun main () {
-    var nama : String = "Budi"
-
-    var alamat :String? = "jakarta"
-    alamat = null
-    println("Panjang alamat : ${alamat?.length}")
-
-    val panjangAlamat = alamat?.length ?: 0
-    println("panjang alamat $panjangAlamat")
-
-}
+//fun main () {
+//    var nama : String = "Budi"
+//
+//    var alamat :String? = "jakarta"
+//    alamat = null
+//    println("Panjang alamat : ${alamat?.length}")
+//
+//    val panjangAlamat = alamat?.length ?: 0
+//    println("panjang alamat $panjangAlamat")
+//
+//}
 
 //pernyataan when
 //
