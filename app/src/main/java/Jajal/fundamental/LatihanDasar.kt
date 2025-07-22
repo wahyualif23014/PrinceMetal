@@ -1,24 +1,35 @@
 package Jajal.fundamental
 
-
-//koleksi data
-fun main() {
-    // List (Daftar)
-    val daftarNama: List<String> = listOf("Ani", "Budi", "Candra", "Ani")
-    println("Nama pertama: ${daftarNama[0]}")
-    println("Seluruh nama: $daftarNama")
-
-    // Set (Himpunan)
-    val nomorUnik: Set<Int> = setOf(1, 2, 3, 4, 3, 2)
-    println("Nomor unik: $nomorUnik") // Output: [1, 2, 3, 4]
-
-    // Map (Peta)
-    val ibukota: Map<String, String> = mapOf(
-        "Indonesia" to "Jakarta",
-        "Jepang" to "Tokyo"
-    )
-    println("Ibukota Indonesia adalah ${ibukota.getValue("Indonesia")}")
+//loops
+fun main () {
+    val daftarBuah = listOf("apel", "jeruk" ,"mangga")
+    for (buah in daftarBuah) {
+        println("saya suka buah $buah")
+    }
+    println("\n menghitung daftar 1 sampai 5:")
+    for (i in 1..5) {
+        println("$i dan $daftarBuah")
+    }
 }
+
+////koleksi data
+//fun main() {
+//    // List (Daftar)
+//    val daftarNama: List<String> = listOf("Ani", "Budi", "Candra", "Ani")
+//    println("Nama pertama: ${daftarNama[0]}")
+//    println("Seluruh nama: $daftarNama")
+//
+//    // Set (Himpunan)
+//    val nomorUnik: Set<Int> = setOf(1, 2, 3, 4, 3, 2)
+//    println("Nomor unik: $nomorUnik") // Output: [1, 2, 3, 4]
+//
+//    // Map (Peta)
+//    val ibukota: Map<String, String> = mapOf(
+//        "Indonesia" to "Jakarta",
+//        "Jepang" to "Tokyo"
+//    )
+//    println("Ibukota Indonesia adalah ${ibukota.getValue("Indonesia")}")
+//}
 // null safety
 
 //fun main () {
