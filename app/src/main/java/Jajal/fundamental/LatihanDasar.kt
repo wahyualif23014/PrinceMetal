@@ -2,28 +2,41 @@ package Jajal.fundamental
 
 
 
+// null safety
+
+fun main () {
+    var nama : String = "Budi"
+
+    var alamat :String? = "jakarta"
+    alamat = null
+    println("Panjang alamat : ${alamat?.length}")
+
+    val panjangAlamat = alamat?.length ?: 0
+    println("panjang alamat $panjangAlamat")
+
+}
 
 //pernyataan when
-
-fun main() {
-    val hari = 4
-    val namaHari = when (hari) {
-        1 -> "Senin"
-        2 -> "Selasa"
-        3 -> "Rabu"
-        4 -> "Kamis"
-        5 -> "Jumat"
-        else -> "Hari libur"
-    }
-    println("Hari ke-$hari adalah $namaHari") // Output:
-
-    val nilai = 'A'
-    when (nilai) {
-        'A', 'B' -> println("Luar biasa!")
-        'C' -> println("Bagus.")
-        else -> println("Tingkatkan lagi.")
-    }
-}
+//
+//fun main() {
+//    val hari = 4
+//    val namaHari = when (hari) {
+//        1 -> "Senin"
+//        2 -> "Selasa"
+//        3 -> "Rabu"
+//        4 -> "Kamis"
+//        5 -> "Jumat"
+//        else -> "Hari libur"
+//    }
+//    println("Hari ke-$hari adalah $namaHari") // Output:
+//
+//    val nilai = 'A'
+//    when (nilai) {
+//        'A', 'B' -> println("Luar biasa!")
+//        'C' -> println("Bagus.")
+//        else -> println("Tingkatkan lagi.")
+//    }
+//}
 //if else
 //fun main() {
 //    val nilai = 90
