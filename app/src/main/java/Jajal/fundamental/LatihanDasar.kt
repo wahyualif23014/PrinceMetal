@@ -1,23 +1,39 @@
 package Jajal.fundamental
 
+
+//try-catch
+fun main() {
+    val inputAngka = "123x" // Input yang sengaja salah
+
+    try {
+        val angka = inputAngka.toInt()
+        println("Angka yang valid: $angka")
+    } catch (e: NumberFormatException) {
+        // Blok ini akan jalan jika terjadi error saat konversi
+        println("Input '$inputAngka' bukan angka yang valid!")
+    } finally {
+        // Blok ini selalu dijalankan, baik ada error maupun tidak
+        println("Proses validasi selesai.")
+    }
+}
 //OOP
-class Persegi (val sisi: Int) {
-    fun hitungLuas(): Int {
-        return sisi * sisi
-    }
-    fun sapa() {
-        println("halo, aku persegi $sisi")
-
-    }
-}
-
-fun main () {
-    val persegiA = Persegi(sisi = 10)
-    val persegiB = Persegi(sisi = 12)
-
-    println("luas persegi A : ${persegiA.hitungLuas()}")
-    persegiB.sapa()
-}
+//class Persegi (val sisi: Int) {
+//    fun hitungLuas(): Int {
+//        return sisi * sisi
+//    }
+//    fun sapa() {
+//        println("halo, aku persegi $sisi")
+//
+//    }
+//}
+//
+//fun main () {
+//    val persegiA = Persegi(sisi = 10)
+//    val persegiB = Persegi(sisi = 12)
+//
+//    println("luas persegi A : ${persegiA.hitungLuas()}")
+//    persegiB.sapa()
+//}
 
 //loops
 //fun main () {
