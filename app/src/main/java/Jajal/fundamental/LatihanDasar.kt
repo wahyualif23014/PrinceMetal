@@ -1,16 +1,35 @@
 package Jajal.fundamental
 
-//loops
-fun main () {
-    val daftarBuah = listOf("apel", "jeruk" ,"mangga")
-    for (buah in daftarBuah) {
-        println("saya suka buah $buah")
+//OOP
+class Persegi (val sisi: Int) {
+    fun hitungLuas(): Int {
+        return sisi * sisi
     }
-    println("\n menghitung daftar 1 sampai 5:")
-    for (i in 1..5) {
-        println("$i dan $daftarBuah")
+    fun sapa() {
+        println("halo, aku persegi $sisi")
+
     }
 }
+
+fun main () {
+    val persegiA = Persegi(sisi = 10)
+    val persegiB = Persegi(sisi = 12)
+
+    println("luas persegi A : ${persegiA.hitungLuas()}")
+    persegiB.sapa()
+}
+
+//loops
+//fun main () {
+//    val daftarBuah = listOf("apel", "jeruk" ,"mangga")
+//    for (buah in daftarBuah) {
+//        println("saya suka buah $buah")
+//    }
+//    println("\n menghitung daftar 1 sampai 5:")
+//    for (i in 1..5) {
+//        println("$i dan $daftarBuah")
+//    }
+//}
 
 ////koleksi data
 //fun main() {
