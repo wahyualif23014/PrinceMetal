@@ -1,33 +1,82 @@
 package Jajal.fundamental
 
+//abstract
+interface perilaku {
+    fun bergerak()
+}
+class emeng(val nama: String) : perilaku {
+    override fun bergerak() {
+        println("$nama berjalan dengan anggun")
+    }
+}
 
+class tytyd( val nama: String) : perilaku{
+    override fun bergerak() {
+        println("$nama sedang terbang")
+    }
+}
+fun main(){
+    val joko = emeng("joko")
+    val siJoni = tytyd("joni")
+    joko.bergerak()
+    siJoni.bergerak()
+}
+
+
+
+////polimorpishm
+//open class Hewan(val nama:String) {
+//    open fun bersuara(){
+//        println("rawrss")
+//    }
+//}
+//
+//class Kucing(nama: String) : Hewan(nama) {
+//    override fun bersuara(){
+//        println("meongggg")
+//    }
+//}
+//class Anjing(nama: String) : Hewan(nama){
+//    override fun bersuara() {
+//        println("Guk! Guk!")
+//    }
+//}
+//fun main() {
+//    val hewan1: Hewan = Kucing("Kitty") // Objek Kucing disimpan dalam variabel tipe Hewan
+//    val hewan2: Hewan = Anjing("Doggy")
+//    val hewan3: Hewan = Hewan("Tiger")
+//
+//    hewan1.bersuara() // Output: Meow! (Meskipun tipe variabelnya Hewan, method dari Kucing yang dipanggil)
+//    hewan2.bersuara() // Output: Guk! Guk!
+//    hewan3.bersuara()
+//}
 
 //pilar oop Kotlin
 //pewarisan
 //bisa di warisi oleh class mana saja seperti global
-open class Hewan(val nama: String, val umur: Int) {
-    fun makan() {
-        println("$nama sedang makan")
-    }
-//bisa diwarisi oleh class mana saja
-    open fun bersuara (){
-        println("meongggg")
-    }
-}
-class kucing(nama :String, umur: Int, val warna: String) : Hewan(nama, umur){
-    fun infobulu(){
-        println("$nama punya bulu warna $warna ")
-    }
-}
-
-fun main () {
-    val kucingOren = kucing ("oren", 3 ,"pink")
-
-    println(kucingOren.nama)
-    kucingOren.makan()
-    kucingOren.infobulu()
-    kucingOren.bersuara()
-}
+//open class Hewan(val nama: String, val umur: Int) {
+//    fun makan() {
+//        println("$nama sedang makan")
+//    }
+////bisa diwarisi oleh class mana saja
+//    open fun bersuara (){
+//        println("meongggg")
+//    }
+//}
+//class kucing(nama :String, umur: Int, val warna: String) : Hewan(nama, umur){
+//    fun infobulu(){
+//        println("$nama punya bulu warna $warna ")
+//    }
+//}
+//
+//fun main () {
+//    val kucingOren = kucing ("oren", 3 ,"pink")
+//
+//    println(kucingOren.nama)
+//    kucingOren.makan()
+//    kucingOren.infobulu()
+//    kucingOren.bersuara()
+//}
 //try-catch
 //fun main() {
 //    val inputAngka = "123x" // Input yang sengaja salah
