@@ -1,19 +1,46 @@
 package Jajal.fundamental
 
 
-//try-catch
-fun main() {
-    val inputAngka = "123x" // Input yang sengaja salah
 
-    try {
-        val angka = inputAngka.toInt()
-        println("Angka yang valid: $angka")
-    } catch (e: NumberFormatException) {
-        println("Input '$inputAngka' bukan angka yang valid!")
-    } finally {
-        println("Proses validasi selesai.")
+//pilar oop Kotlin
+//pewarisan
+//bisa di warisi oleh class mana saja seperti global
+open class Hewan(val nama: String, val umur: Int) {
+    fun makan() {
+        println("$nama sedang makan")
+    }
+//bisa diwarisi oleh class mana saja
+    open fun bersuara (){
+        println("meongggg")
     }
 }
+class kucing(nama :String, umur: Int, val warna: String) : Hewan(nama, umur){
+    fun infobulu(){
+        println("$nama punya bulu warna $warna ")
+    }
+}
+
+fun main () {
+    val kucingOren = kucing ("oren", 3 ,"pink")
+
+    println(kucingOren.nama)
+    kucingOren.makan()
+    kucingOren.infobulu()
+    kucingOren.bersuara()
+}
+//try-catch
+//fun main() {
+//    val inputAngka = "123x" // Input yang sengaja salah
+//
+//    try {
+//        val angka = inputAngka.toInt()
+//        println("Angka yang valid: $angka")
+//    } catch (e: NumberFormatException) {
+//        println("Input '$inputAngka' bukan angka yang valid!")
+//    } finally {
+//        println("Proses validasi selesai.")
+//    }
+//}
 //OOP
 //class Persegi (val sisi: Int) {
 //    fun hitungLuas(): Int {
