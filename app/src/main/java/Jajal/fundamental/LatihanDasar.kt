@@ -1,26 +1,39 @@
 package Jajal.fundamental
 
-//abstract
-interface perilaku {
-    fun bergerak()
-}
-class emeng(val nama: String) : perilaku {
-    override fun bergerak() {
-        println("$nama berjalan dengan anggun")
-    }
-}
 
-class tytyd( val nama: String) : perilaku{
-    override fun bergerak() {
-        println("$nama sedang terbang")
-    }
+//data class
+data class User(val id:Int, val username:String)
+
+fun main (){
+    val user1 = User(1,"dewa")
+    val user2 = User(1, "sasena")
+    val user3 = User(3, "buana")
+
+    println(user1)
+    println("user1 == 2 : ${user1 == user2}")
+    println("user1 == 3: ${user1 == user3}")
 }
-fun main(){
-    val joko = emeng("joko")
-    val siJoni = tytyd("joni")
-    joko.bergerak()
-    siJoni.bergerak()
-}
+//abstract
+//interface perilaku {
+//    fun bergerak()
+//}
+//class emeng(val nama: String) : perilaku {
+//    override fun bergerak() {
+//        println("$nama berjalan dengan anggun")
+//    }
+//}
+//
+//class tytyd( val nama: String) : perilaku{
+//    override fun bergerak() {
+//        println("$nama sedang terbang")
+//    }
+//}
+//fun main(){
+//    val joko = emeng("joko")
+//    val siJoni = tytyd("joni")
+//    joko.bergerak()
+//    siJoni.bergerak()
+//}
 
 
 
