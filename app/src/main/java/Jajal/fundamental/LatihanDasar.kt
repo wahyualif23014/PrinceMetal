@@ -2,17 +2,17 @@ package Jajal.fundamental
 
 
 //data class
-data class User(val id:Int, val username:String)
-
-fun main (){
-    val user1 = User(1,"dewa")
-    val user2 = User(1, "sasena")
-    val user3 = User(3, "buana")
-
-    println(user1)
-    println("user1 == 2 : ${user1 == user2}")
-    println("user1 == 3: ${user1 == user3}")
-}
+//data class User(val id:Int, val username:String)
+//
+//fun main (){
+//    val user1 = User(1,"dewa")
+//    val user2 = User(1, "sasena")
+//    val user3 = User(3, "buana")
+//
+//    println(user1)
+//    println("user1 == 2 : ${user1 == user2}")
+//    println("user1 == 3: ${user1 == user3}")
+//}
 //abstract
 //interface perilaku {
 //    fun bergerak()
