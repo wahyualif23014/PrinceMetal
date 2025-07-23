@@ -9,10 +9,8 @@ fun main() {
         val angka = inputAngka.toInt()
         println("Angka yang valid: $angka")
     } catch (e: NumberFormatException) {
-        // Blok ini akan jalan jika terjadi error saat konversi
         println("Input '$inputAngka' bukan angka yang valid!")
     } finally {
-        // Blok ini selalu dijalankan, baik ada error maupun tidak
         println("Proses validasi selesai.")
     }
 }
